@@ -1,4 +1,4 @@
-/* Quala-project
+/* Quala-paper
  *	goDASH, golang client emulator for DASH video streaming
  *	Copyright (c) 2019, Jason Quinlan, Darijo Raca, University College Cork
  *											[j.quinlan,d.raca]@cs.ucc.ie)
