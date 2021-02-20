@@ -42,7 +42,9 @@ Version 2.0 of godash is a major write of the code, and versions of godash from 
 --------------------------------------------------------
 
 ## Install Steps
-The easiest way to install goDASH is to use the install script available at the UCC Mobile and Internet System Lab [MISL](http://cs1dev.ucc.ie/misl/godash2.0/)
+
+Please use the installer.sh script to install godash automatically.
+
 
 # Examples to launch the app :
 ```
@@ -55,38 +57,6 @@ or use the pre-defined configure file (advised option):
 ```
 By setting "getHeaders" to "on", you can download all of the per segment transmission costs for the provided MPD url.  This information is needed by some algorithms to maximum video quality.  This file is stored in "logs", and can be used at any time by the requesting algorithms.
 
---------------------------------------------------------
-
-## Requirements - if install script not used
-Install Google [GO](https://golang.org/dl/):
-
-Clone or download this repository.  Depending on where you save goDASH, you may have to change your GOPATH.
-
-(you can check your goPath by using `go env $GOPATH` )
-
-Install [consul](https://www.consul.io) and follow their install instructions.
-
-In linux/mac :
-```
-export GOPATH=/home/path/to/godash
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-```
-or add these commands to you ~/.profile (remove "export" as this is not needed in .profile)
-
-## Build Instructions
-In a terminal :
-```
-cd godash
-```
-Update all repositories and dependencies, and build the player using:
-```
-go build
-```
-
-The best option to run goDASH is to use the configure.json file
-```
-./godash -config ./config/configure.json
-```
 
 --------------------------------------------------------
 To output the P.1203 QoE values, you will need to install the P.1203 GitHub repository
